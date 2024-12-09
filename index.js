@@ -1,10 +1,10 @@
 const express = require("express");
 const app = express();
 const dotenv = require("dotenv").config();
-const connection = require("./dbConnection");
+// const connection = require("./dbConnection");
 const cors = require("cors");
 
-connection();
+// connection();
 //
 app.use(express.json());
 // to get data to te frontend
