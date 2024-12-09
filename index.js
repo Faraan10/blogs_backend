@@ -7,7 +7,10 @@ const cors = require("cors");
 connection();
 //
 app.use(express.json());
+// to get data to te frontend
 app.use(cors());
+// used for form data
+// app.use(express.urlencoded({ extended: false }));
 
 app.use("/api/news", require("./routes/data"));
 
